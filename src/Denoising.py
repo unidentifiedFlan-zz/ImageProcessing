@@ -56,13 +56,13 @@ def sp_noise(image, prob):
     return output
 
 
-noisy_file = "C:/Users/scday/Documents/coding/ComputerVision/Denoising/noisygradient.png"
-save_dir = "C:/Users/scday/Documents/coding/ComputerVision/Denoising/"
+noisy_file = "ComputerVision/Denoising/noisygradient.png"
+save_dir = "ComputerVision/Denoising/"
 
 noisy_im = Image.open(noisy_file).convert('L')
 width, height = noisy_im.size
 
-file = "C:/Users/scday/Documents/coding/ComputerVision/Denoising/IMG_3379.jpg"
+file = "ComputerVision/Denoising/IMG_3379.jpg"
 clean_img = Image.open(file).convert('L')
 clean_arr = np.asarray(clean_img)
 noisy_arr = sp_noise(clean_arr, 0.04)

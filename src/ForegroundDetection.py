@@ -17,7 +17,7 @@ def classify_background(image, mean_tensor, variation_tensor):
     return image
 
 
-root_dir = "C:/Users/scday/Documents/coding/ComputerVision/Wallflower-test-data/"
+root_dir = "ComputerVision/Wallflower-test-data/"
 test_name = "WavingTrees"
 test_dir = root_dir + test_name + "/"
 output_dir = root_dir + test_name + "-output/"

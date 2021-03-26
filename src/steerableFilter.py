@@ -37,8 +37,8 @@ def oriented_convolution(image, kernel_h, theta):
 
 
 def main():
-    file = "C:/Users/scday/Documents/coding/ComputerVision/steerable/cat.jpg"
-    save_dir = "C:/Users/scday/Documents/coding/ComputerVision/steerable/"
+    file = "ComputerVision/steerable/cat.jpg"
+    save_dir = "ComputerVision/steerable/"
 
     im = Image.open(file).convert('L')
     im_arr = np.asarray(im)

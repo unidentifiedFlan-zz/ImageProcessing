@@ -8,7 +8,7 @@ class colour_balancer:
 
     def __init__(self):
 
-        self.im = Image.open('C:/Users/scday/Pictures/Random/shaunofthedead.png')
+        self.im = Image.open('shaunofthedead.png')
         self.im.format = 'RGB'
 
         self.r_fac = tk.Scale(window, from_=0, to=5, orient=tk.HORIZONTAL, command=self.updateImg)
